@@ -10,7 +10,7 @@ const Contenido = () => {
 
   useEffect(() => {
     // Solicitud al back-end para obtener los celulares
-    axios.get('http://localhost:3001/api/celulares')
+    axios.get('https://back-cel.onrender.com/api/celulares')
       .then((response) => {
         setCelulares(response.data); // Guardamos todos los celulares
         setFilteredCelulares(response.data); // Inicializamos los celulares filtrados

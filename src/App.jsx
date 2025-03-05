@@ -14,12 +14,7 @@ const App = () => {
   };
 
   // Usamos el hook useEffect para redirigir automáticamente al inicio cuando se recarga la página
-  useEffect(() => {
-    // Cuando la página se recarga, forzamos la navegación a la página de inicio
-    if (window.location.pathname !== '/') {
-      window.location.replace('/');
-    }
-  }, []);  // Solo se ejecuta una vez al cargar la aplicación
+ // Solo se ejecuta una vez al cargar la aplicación
 
   return (
     <Router>
